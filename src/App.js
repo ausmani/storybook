@@ -1,24 +1,16 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import TaskManagement from "./components/TaskManagement";
 
-import Counter from "./components/counter";
-import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
-  return (
-    <div className="container">
-        <div className="row">
-            <div className="col-sm">
-
+    return (
+        <>
+            <h1 className="text-center">Task Management Application</h1>
+            <div className="container">
+                <TaskManagement/>
             </div>
-            <div className="col-sm">
-                <p>Start Learning React Story Book</p>
-                <Counter initialValue={10}/>
-            </div>
-            <div className="col-sm">
-
-            </div>
-        </div>
-
-    </div>
-  );
+        </>
+    );
 }
 
 export default App;
